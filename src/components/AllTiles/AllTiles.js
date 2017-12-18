@@ -23,7 +23,7 @@ class AllTiles extends Component {
   }
 
   delete(id) {
-    axios.delete(`http://localhost:8080/${id}`)
+    axios.delete(`https://flyhigh.herokuapp.com/${id}`)
     .then(
       setTimeout(this.props.getData, 500)
     )

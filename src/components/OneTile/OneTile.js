@@ -16,7 +16,7 @@ class OneTile extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:8080/onetile/${this.props.clickedId}`)
+    axios.get(`https://flyhigh.herokuapp.com/onetile/${this.props.clickedId}`)
     .then(res => {
       this.setState({
         todayCurrent: res.data.onePlaceData.currently,

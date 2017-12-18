@@ -37,7 +37,7 @@ class App extends Component {
   }
   
   getData() {
-    axios.get(`http://localhost:8080/`)
+    axios.get(`https://flyhigh.herokuapp.com/`)
     .then(res => {
       const places = res.data.places || [];
       this.setState({
